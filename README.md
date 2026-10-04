@@ -1,34 +1,44 @@
-# ELI5: explain anything to anyone
+# ELI5 · Young AI Leaders Linz
 
-A [Claude Code](https://claude.com/claude-code) skill that explains a topic, piece of code, error or document at the level of whoever is listening: a five-year-old, a high-school student, your manager, an engineer, your parents. It changes vocabulary, comparisons, tone, depth and framing to fit.
+A [Claude Code](https://claude.com/claude-code) skill that explains a topic, piece of code, policy or paper for one specific listener, in the house voice of Young AI Leaders Linz: from a five-year-old to a ministry official, from a 13-year-old in an AI literacy session to a sponsor's CEO.
 
 ## What it does
 
-- **Works out the audience** from your request (default: a curious five-year-old)
-- **Understands the source first**: reads the code, finds the root cause of the error, pulls out the key points
-- **Builds the explanation** as: the point → one comparison from the listener's world → as much detail as they can use → why it matters to them
-- **Stays honest**: it leaves detail out but doesn't add errors, and says where a comparison breaks down
-- **Handles several audiences at once**: "explain this to my manager and to the engineers" gives two labelled versions
+- **Finds the listener** in a profile set built around how the hub works: institutional readers, partners and sponsors, prospective and new members, pupils, teachers and parents, panel audiences and press, engineers and other hub leads, ages, school levels, family
+- **Understands the source first**: reads the code, finds the root cause, pulls out what a regulation changes and for whom
+- **Checks any fact about the hub** against the knowledge base (`docs/CONTEXT.md`, `docs/LAWS.md`, `docs/07_FACTS/`): exact phrasing, scope with every figure, labels as ruled, nothing unverified, and omits what it cannot source
+- **Builds the explanation** as takeaway → one comparison from the listener's world → detail they can use → what it means for them
+- **Writes in the house voice**: high-energy, low-hype; no emoji, no exclamation marks, no superlatives or buzzwords, no negation framing; house punctuation, dates and names
+- **Applies AI literacy rules** for pupils and the public: capability, not enthusiasm, with one line on what AI gets wrong or how to check it
+- **Switches to German** for Austrian schools and public bodies (*du* / *Sie*), and flags drafts for native-speaker review
+- **Lays it out** for the use: chat answer, multi-audience brief, slide with speaker notes, school handout, LinkedIn post, or a one-page HTML explainer in the brand palette and type
 
-## Supported audiences
+## Structure
 
-| Group | Examples |
-|---|---|
-| Age | 5, 10, 15, 20s–30s, 40+ |
-| Schooling | Primary, middle school, high school, university, graduate/expert |
-| Role | Manager, director, product manager, engineer, designer, colleague, client |
-| Relationship | Partner, parents/grandparents, kids, friend |
-
-Anyone else gets the same three questions: what do they already know, what do they care about, and how much time will they give you?
+```
+skills/eli5/
+├── SKILL.md                  the workflow
+├── references/
+│   ├── audiences.md          listener profiles
+│   ├── house-style.md        voice, punctuation, numbers, names, language
+│   ├── formats.md            output layouts
+│   └── examples.md           worked examples, EN and DE
+└── assets/
+    └── explainer.html        branded one-page template
+evals/
+└── evals.json                test prompts with expectations
+```
 
 ## Example prompts
 
 ```
-ELI5 what a database index is
-Explain this stack trace to my manager
-Break down how git rebase works for a high-school student
-How do I explain what a VPN is to my mum?
-Explain this PR to our designer and to the backend team
+ELI5 what RAG is
+Explain the EU AI Act risk levels to our sponsor's CEO
+Explain AI hallucinations to 13-year-olds, as a handout
+Explain our Gambia project to a ministry official and to a prospective member
+Turn this explanation of embeddings into one slide
+Explain what an MCP server is to the Community & Events team
+How do I explain to my parents what Young AI Leaders Linz is?
 ```
 
 ## Install
@@ -40,17 +50,19 @@ git clone https://github.com/galvadino/eli5.git
 cp -r eli5/skills/eli5 ~/.claude/skills/eli5
 ```
 
-Project only: copy `skills/eli5` into `.claude/skills/eli5` in your repo.
+Project only, e.g. inside the knowledge-base repo: copy `skills/eli5` to `.claude/skills/eli5`. Run from that repo, the skill reads `docs/` directly for facts about the hub.
 
-Then just ask Claude Code to "ELI5 this" or "explain this to my manager".
+## Facts live in the knowledge base, not here
+
+The skill carries no figures of its own beyond the dated examples. Facts about the hub are read from the knowledge base at run time, so they stay current when `07_FACTS` changes. Without the knowledge base, the skill leaves hub facts out and says so.
 
 ## Evals
 
-`evals/evals.json` contains test prompts with what a good answer should do. Run each prompt with the skill installed and check the output against its expectations.
+`evals/evals.json` holds test prompts with expectations. Run each with the skill installed and check the output against them.
 
 ## Credits
 
-Inspired by [DreambigOu/ELI5](https://github.com/dreambigou/eli5) (MIT). This is an independent rewrite.
+Started from the idea in [DreambigOu/ELI5](https://github.com/dreambigou/eli5) (MIT) and rebuilt for Young AI Leaders Linz.
 
 ## License
 

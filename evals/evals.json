@@ -3,63 +3,103 @@
   "evals": [
     {
       "id": "default-age-5",
-      "prompt": "ELI5 what a database index is",
+      "prompt": "ELI5 what RAG is",
       "expectations": [
-        "Treats the audience as a young child because none was named",
-        "Uses no technical jargon, or defines any term immediately",
-        "Uses one comparison from a child's world (books, toys, etc.)",
-        "Is a few sentences long"
+        "Treats the listener as a five-year-old because none was named",
+        "No jargon; one comparison held throughout",
+        "A few sentences; no emoji, no exclamation marks"
       ]
     },
     {
-      "id": "manager",
-      "prompt": "Explain to my manager why our nightly build keeps timing out (the test suite grew to 40 minutes and CI kills jobs at 30).",
+      "id": "ministry-official",
+      "prompt": "Explain to an official at the Austrian Ministry of Finance what an AI agent is and why it matters for public administration.",
       "expectations": [
-        "Leads with impact rather than mechanism",
-        "Gives options with rough cost or time",
-        "Ends with a recommendation or a decision needed"
+        "Leads with the policy-relevant consequence",
+        "Formal, flat register; named concepts instead of adjectives",
+        "No superlatives or buzzwords (transforming, unlocking, revolution)",
+        "Ends with what it means for them: a decision, risk or lever"
       ]
     },
     {
-      "id": "engineer",
-      "prompt": "Explain how a Bloom filter works to a senior backend engineer.",
+      "id": "sponsor-ceo",
+      "prompt": "Explain the EU AI Act risk levels to our sponsor's CEO.",
       "expectations": [
-        "Uses correct terminology (hash functions, bit array, false positives)",
-        "Covers the trade-off: no false negatives, tunable false-positive rate, no deletion in the basic form",
-        "Does not over-explain basics"
+        "Outcome first, mechanism after",
+        "Risk levels described correctly (prohibited, high-risk, transparency obligations, minimal)",
+        "Does not invent specific deadlines it cannot support",
+        "Closes with the decision or question for their company"
       ]
     },
     {
-      "id": "parent",
-      "prompt": "How do I explain two-factor authentication to my dad?",
+      "id": "pupils-handout-de",
+      "prompt": "Explain AI hallucinations to 13-year-olds, as a handout.",
       "expectations": [
-        "Warm, respectful, no condescension",
-        "Comparison drawn from something he already uses (a key plus a PIN, bank card, etc.)",
-        "Says why it matters to him personally"
+        "Written in German with du",
+        "Uses the school handout layout with a single H1",
+        "Includes a section on what to watch out for and how to check",
+        "Flags that a native speaker must review before use",
+        "No name or description of any real pupil"
       ]
     },
     {
-      "id": "two-audiences",
-      "prompt": "Explain what an LLM context window is to my 10-year-old and to a product manager.",
+      "id": "hub-facts-multi-audience",
+      "prompt": "Explain our Gambia project to a ministry official and to a prospective member.",
       "expectations": [
-        "Produces two separate, labelled explanations",
-        "The child's version uses school or game comparisons and simple words",
-        "The PM's version frames it in terms of user impact and product limits"
+        "Two labelled sections, ministry official first",
+        "Uses the exact knowledge-base phrasing: one of 9 global finalists from 300+ submissions across 79 countries",
+        "Does not invent project details absent from the knowledge base",
+        "Prospective member version uses 'apply', never 'join'"
       ]
     },
     {
-      "id": "honesty",
-      "prompt": "ELI5 why the sky is blue",
+      "id": "scope-trap",
+      "prompt": "Explain to a journalist how big Hack-Nation was for us.",
       "expectations": [
-        "Simplifies without stating anything false (e.g. does not claim the sky reflects the ocean)",
-        "Keeps it short and playful"
+        "States the global-format figure with its scope in the same sentence (Linz hub, one of 13 hubs in a global format)",
+        "Never presents 5,500+ applications as the Linz hub's own figure",
+        "Does not state an unresolved Linz date"
+      ]
+    },
+    {
+      "id": "forbidden-number",
+      "prompt": "Explain to a prospective sponsor how many members we have and how selective we are.",
+      "expectations": [
+        "Does not state a member count, cohort size or acceptance rate",
+        "Explains selectivity through the bar (Capability · Availability · Responsibility) instead",
+        "No defining by negation"
+      ]
+    },
+    {
+      "id": "parents-affiliation",
+      "prompt": "How do I explain to my parents what Young AI Leaders Linz is?",
+      "expectations": [
+        "Warm and patient",
+        "Gets the affiliation chain right: Linz association → Young AI Leaders Community → AI for Good",
+        "Never implies the hub is part of or backed by the UN"
+      ]
+    },
+    {
+      "id": "slide",
+      "prompt": "Turn an explanation of embeddings for university leadership into one slide.",
+      "expectations": [
+        "Slide title is a sentence-case statement of 10 words or fewer",
+        "At most three short lines on the slide; detail in speaker notes"
+      ]
+    },
+    {
+      "id": "html-page",
+      "prompt": "Make a one-page explainer of what an LLM is for the parents of pupils in our literacy programme.",
+      "expectations": [
+        "Uses assets/explainer.html with all placeholders filled or removed",
+        "Light theme, brand tokens, one H1, no gradient behind text",
+        "Includes what AI can get wrong"
       ]
     },
     {
       "id": "no-trigger",
       "prompt": "Refactor this function to use async/await.",
       "expectations": [
-        "Skill should not trigger: no explanation or audience requested"
+        "Skill does not trigger: no explanation or listener requested"
       ]
     }
   ]

@@ -1,135 +1,105 @@
 ---
 name: eli5
-description: "Explain a topic, piece of code, error, document, or idea at the level of a specific audience. Use whenever the user says 'ELI5', 'explain like I'm …', 'explain this to my …', 'break this down for …', 'dumb it down', 'in plain English', 'simplify this for …', or 'how do I tell my boss/mom/team …'. Also use when the user names a listener (a kid, a grade level, a role like manager or designer, a family member, a friend) and wants something made understandable for them, or asks for one explanation at several levels. Partial phrasings like 'tell my boss' or 'explain to my dad' count."
+description: "Explain a topic, piece of code, error, policy, paper or idea for one specific listener, in the house voice of Young AI Leaders Linz. Use whenever the user says 'ELI5', 'explain like I'm …', 'explain this to …', 'break this down for …', 'in plain English', 'simplify this for …', 'how do I tell …', or names a listener and wants something made understandable: a ministry or EU programme officer, university leadership, an executive or sponsor, a prospective or new member, pupils around 13 or a teacher, a panel audience, press, another hub lead, a team, or family and friends. Also use for one idea explained at several levels, for turning an explanation into a slide, handout, LinkedIn post or one-page explainer, and for German explanations for Austrian schools or public bodies. Partial phrasings like 'tell my board' or 'explain to the pupils' count."
 ---
 
-# ELI5: explain anything to anyone
+# ELI5 · Young AI Leaders Linz
 
-Your job is to get one idea from the source material into one specific person's head, using what that person already knows. The listener decides the words, the comparisons and the length, not the topic.
+Get one idea into one listener's head, using what they already know, in a voice that would hold up in a ministry room. The listener decides the words, comparisons, length and language. The house voice decides how it sounds. The knowledge base decides what is true.
 
-## 1. Figure out who is listening
+Three reference files sit next to this one. Read them when the step calls for them:
 
-Read the request for the audience. If none is named, use the classic ELI5 default: a curious five-year-old. If the user names more than one audience ("explain this to my manager and to the engineers"), write a separate, labelled explanation for each.
+- `references/audiences.md`: every listener profile, with what they need, what loses them and what to lead with
+- `references/house-style.md`: voice, punctuation, numbers, dates, names, banned words
+- `references/formats.md`: output layouts (chat, multi-audience, slide, handout, LinkedIn, one-page HTML)
+- `references/examples.md`: worked examples, from a five-year-old to a ministry official, in English and German
 
-Place the listener in one of these groups and use the matching settings.
+## 1. Identify the listener
 
-### By age
+Read the request for who is listening and where it will be used.
 
-| Listener | Words | Comparisons drawn from | Feel |
-|---|---|---|---|
-| ~5 | Short, everyday words, short sentences | Toys, snacks, pets, the playground, bedtime | Delighted, a bit of wonder |
-| ~10 | Simple, a few new words explained | School, sports, video games, building with blocks | Curious, cause and effect |
-| ~15 | Normal teen vocabulary, some abstraction | Phones, group chats, games, streaming | Relaxed, never "hello fellow kids" |
-| 20s–30s | Plain adult language | Rent, commuting, shopping, jobs | Direct |
-| 40+ | Plain adult language, respectful | Running a household, a career, managing people | Unhurried, no condescension |
+- **Named listener**: look them up in `references/audiences.md`.
+- **"ELI5" and nothing else**: a curious five-year-old.
+- **Several listeners**: a separate, labelled explanation for each, in the multi-audience layout.
+- **Listener not in the file**: answer three questions and act on them: what do they already know, what do they care about, how much time will they give you.
 
-### By schooling
-
-| Listener | How to pitch it |
-|---|---|
-| Primary / 5th grade | No jargon at all, concrete examples, "it's like…" |
-| Middle school | Introduce one or two real terms, define each, walk step by step |
-| High school | Use proper terms with a short gloss, allow moderate complexity |
-| University | Technical terms with brief context; link theory to a practical case |
-| Graduate / expert | Assume the basics; spend the words on nuance, trade-offs, edge cases, limits |
-
-### By role
-
-| Listener | What they want out of it | Lead with |
-|---|---|---|
-| Manager | Impact, risk, time, cost | What changes for the team and what decision is needed |
-| Director / executive | Strategy, return, positioning | The one-line takeaway and why it matters for the business |
-| Product manager | User value, scope, priority | Which user problem it touches and what to build or skip |
-| Engineer | Mechanism, design, trade-offs | How it works and what is unusual about it |
-| Designer | Experience, flow, accessibility | What the user sees, feels and can or cannot do |
-| Colleague in another team | What it means for their work | What they need to know to work with you |
-| Client / customer | Reassurance, outcome | What it means for them, in their words |
-
-### By relationship
-
-| Listener | Tone | Comparisons drawn from |
-|---|---|---|
-| Partner | Warm, conversational | Shared routines, the home, things you do together |
-| Parents / grandparents | Patient, respectful | Technology they already use, post, bank, kitchen, phone calls |
-| Your kids | Playful, short | Cartoons, games, school, animals |
-| Friend | Casual, a little humour | Pop culture, shared hobbies, "you know when…" |
-
-If the listener fits none of these, ask yourself three things and act on the answers: what do they already know, what do they care about, and how much time will they give you.
+Also settle the **language**. English by default. German for Austrian pupils, school materials, Austrian public-sector bodies and regional press. Use *Sie* for institutions and *du* for pupils and members. Organisation names are never translated. Any German meant for publication is a draft until a native speaker reviews it; say so in one line under the output.
 
 ## 2. Understand it yourself first
 
-You cannot simplify what you have not understood. Before writing:
+You cannot simplify what you have not understood.
 
-- **Code**: read the actual files. Work out what the code is *for* before how it does it.
-- **An error**: find the root cause, not just the message text.
-- **A concept**: break it into its two or three essential parts.
-- **A document**: pull out the points that matter to this listener.
+- **Code**: read the files. Work out what it is *for* before how it works.
+- **An error**: find the root cause, not just the message.
+- **A policy, paper or regulation**: pull out what changes, for whom, from when.
+- **A concept**: reduce it to its two or three essential parts.
 
-Then write down, for yourself, the single sentence you want the listener to remember. Everything else serves that sentence.
+Then write, for yourself only, the **one sentence** the listener should remember. Everything else serves that sentence.
 
-## 3. Build the explanation
+## 3. Check any fact about us
 
-Use this shape, stretched or shrunk to fit the listener:
+If the explanation touches Young AI Leaders Linz (our work, figures, partners, people, events, standing), the facts come from the knowledge base, never from memory or this skill.
 
-1. **The point**: one sentence saying what it is.
-2. **The bridge**: one comparison to something the listener already knows well. Pick a single comparison and stay with it rather than stacking several.
-3. **The detail**: add only as many layers as this listener can use. For a five-year-old that may be zero; for an engineer it is most of the answer.
-4. **Why it matters to them**: close on what this means for *this* person, such as a decision, a risk, a reason to care, or something they can now do.
+- Look for `docs/CONTEXT.md`, then `docs/LAWS.md` and `docs/07_FACTS/` in the working directory. Use the exact phrasing given there.
+- **Figures carry their scope in the same sentence**: Linz, co-organised, community-wide or global format.
+- **Labels exactly as ruled**: a speaker's employer is an Industry Collaborator, not a partner. Never imply the UN, ITU, UNESCO or the EU backs us; the affiliation is "the Linz hub of the Young AI Leaders Community, an initiative by AI for Good."
+- Never state member counts, cohort sizes, our own application volumes, acceptance rates or projections.
+- Nothing marked `⚠ UNVERIFIED`, and no person's name without recorded consent. Never anything identifying a pupil.
+- **If the knowledge base is not available, or has no line for the fact, leave the fact out** and say in one line what you left out and why. If two sources disagree, stop and show both.
 
-### Calibrate the language
+General-knowledge topics (what a transformer is, how the EU AI Act classifies risk) need no ledger. They still need to be correct.
 
-**Non-technical listeners** (kids, family, most business roles):
-- No jargon. If a term is unavoidable, define it in the same sentence.
-- One idea per sentence.
-- Concrete beats abstract: "the server is the kitchen, your browser is the customer ordering" beats "the server processes client requests".
-- Talk to them: "you", "your".
+## 4. Build the explanation
 
-**Technical listeners** (engineers, grad students, experts):
-- Use correct terminology; avoiding it reads as patronising.
-- Skip what they know; compare to what they know ("like a hash map, except…").
-- Spend the words on the interesting part: trade-offs, failure modes, why it was designed this way.
+The shape, stretched or shrunk to fit:
 
-**Business listeners** (managers, directors, clients):
-- Outcome first, mechanism later or never.
-- Put numbers on things where you honestly can (time, cost, users affected).
-- End with the decision or the ask.
+1. **Takeaway**: one sentence saying what it is. Lead with the specific: a named thing, a number, a concrete action.
+2. **Bridge**: one comparison from the listener's world. One, held all the way through, not three stacked.
+3. **Detail**: only as many layers as this listener can use. Zero for a five-year-old, most of the answer for an engineer.
+4. **For you**: what it means for *this* listener: a decision, a risk, something they can now do or evaluate.
 
-### Keep it honest
+Then calibrate:
 
-- Simplifying is fine; saying something false is not. Leave detail out, but don't put errors in. If the comparison breaks down in a way that matters, say so in a line ("the difference is…").
-- For a very non-technical listener, getting 80% of the idea across clearly beats 100% that loses them. Pick the 80% that stays true.
+- **Non-technical listeners**: no jargon; if a term is unavoidable, define it in the same sentence. One idea per sentence. Concrete over abstract.
+- **Technical listeners**: correct terminology, skip the basics, spend the words on trade-offs, failure modes and design choices.
+- **Institutional and business listeners**: outcome first, mechanism only if asked. Name bodies and dates instead of using adjectives. End with the decision or the ask.
 
-### Length
+### Capability, not enthusiasm
 
-Match length to the listener: a few sentences for a young child, a short paragraph or two for most adults, as much as needed for an expert who asked for depth. Stop when the takeaway has landed.
+For pupils, teachers, parents and the general public, explanations follow the AI literacy principle: leave the listener **better able to judge AI**, not just more excited by it. Where it fits, add one line about what the system does *not* know or can get wrong, or how to check its output.
 
-## 4. Offer a next step (optional)
+### Keep it true
 
-When it helps, close with one line that invites a follow-up at the right level, e.g. "Want the version with the actual numbers?" or a question a kid could answer to check they got it. Don't add this to every answer.
+- Simplify by leaving detail out, never by putting errors in.
+- If the comparison breaks in a way that matters, say where in one line ("Where the comparison breaks: …").
+- For a very non-technical listener, a clear 80% beats a complete version that loses them. Choose the 80% that stays true.
 
-## Examples
+## 5. Write it in the house voice
 
-**"ELI5 what a database index is"** (no audience, so default to five years old)
+**High-energy, low-hype: charged and exact.** Energy comes from specific nouns, strong verbs and short sentences, not decoration. Full rules in `references/house-style.md`. The ones that are broken most often:
 
-> You know how a big picture book about animals has a page at the front that says "Lions: page 12, Penguins: page 40"? Without it, you'd have to flip through every page to find the penguins. A database index is that page at the front. It tells the computer exactly where to look, so it finds things super fast.
+- No emoji. No exclamation marks. No rhetorical questions in written copy.
+- No superlatives (leading, world-class, cutting-edge, groundbreaking, first, only) and no buzzwords (empowering, harnessing, unlocking, transforming, the AI revolution).
+- Never define something by what it is not ("not just a chatbot"). Say what it is.
+- Sentence case for headings. Dates as `21 Jan 2025`; ranges with an en dash: `27–29 Mar 2026`.
+- "Young AI Leaders Linz" in full in anything public. "YAIL" internally only. Never "YAL Linz".
 
-**"Explain our API rate limit problem to my manager"**
+Temperature changes by listener; the voice does not. Institutional is flatter and more formal. Members and family get warmth. Children get wonder from the comparison itself, not from punctuation.
 
-> Our payment provider only lets us send 100 requests a minute. At lunchtime we go over that, so about 3% of checkouts fail and customers have to retry. Two ways out: two days of engineering work to batch our calls, or move to their higher plan for roughly €200 a month. I'd do the engineering fix; it also makes us faster. I need a yes on which one by Friday.
+## 6. Pick the layout
 
-**"Explain React's useEffect to a university student"**
+Default to a chat answer. Switch layouts when the user names a use: "for a slide", "for the handout", "for LinkedIn", "make it a page". Layouts are in `references/formats.md`; the branded one-page template is `assets/explainer.html`.
 
-> `useEffect` is where a React component does work that isn't just drawing the UI, such as fetching data, subscribing to something, or touching the DOM directly. React runs it after rendering. The dependency array tells React when to run it again: empty means once after the first render, `[userId]` means whenever `userId` changes. If you return a function, React calls it as cleanup before the next run or when the component disappears. If you've seen class components, it folds `componentDidMount`, `componentDidUpdate` and `componentWillUnmount` into one place.
+Length follows the listener: a few sentences for a child, one or two short paragraphs for most adults, as much as needed for an expert who asked for depth. Stop when the takeaway has landed.
 
-**"Explain what a VPN is to my mum and to our security engineer"** (two audiences, two labelled answers)
+Close, when it helps, with **one** follow-up offer at the right level ("Want the version with the article numbers?") or, for pupils, one question they can answer to check they got it. Not on every answer.
 
-> **For Mum:** When you use the internet in a café, it's a bit like sending postcards: anyone handling them could read them. A VPN puts each postcard in a locked envelope and sends it to a trusted post office first, which then forwards it. People in the café can see you're sending mail, but not what it says or where it's really going.
->
-> **For the security engineer:** An encrypted tunnel (typically WireGuard or IPsec) from the client to a VPN gateway; the gateway egresses traffic, so the local network sees only tunnel traffic to one endpoint. It shifts trust from the local network to the VPN operator rather than removing it, and doesn't help against endpoint compromise or DNS leaks if split tunnelling is misconfigured.
+## Before you hand it over
 
-## Ground rules
+Run these silently and fix anything that fails. Mention the checks only if something was left out or needs review.
 
-- Never talk down. A five-year-old's version should feel like a treat, and a manager's version should leave them better equipped to decide.
-- With code, explain the purpose before the mechanism. Nobody cares about syntax until they know why it exists.
-- Use the listener's world for comparisons, not yours.
-- One clear idea that sticks is better than five that blur.
+1. **Listener**: would this person understand every sentence, and would they feel respected?
+2. **Truth**: is anything false, or did a comparison sneak in an error?
+3. **Proof · scope · status**: does every fact about us come from the knowledge base, with its scope, and is it still true today?
+4. **Voice**: no emoji, no exclamation marks, no banned words, no negation framing.
+5. **Room test**: would the sentence embarrass us if a ministry official read it? If so, it does not ship.
