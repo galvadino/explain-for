@@ -5,77 +5,80 @@
       "id": "no-listener-named",
       "prompt": "Explain simply what RAG is",
       "expectations": [
-        "Treats the listener as a curious non-specialist adult because none was named",
+        "Treats the listener as a curious non-specialist adult",
         "No jargon; one comparison from everyday life, held throughout",
-        "One or two short paragraphs; no emoji, no exclamation marks"
+        "One or two short paragraphs; no hype words"
       ]
     },
     {
-      "id": "ministry-official",
-      "prompt": "Explain to an official at the Austrian Ministry of Finance what an AI agent is and why it matters for public administration.",
+      "id": "five-year-old",
+      "prompt": "Explain what RAG is to a five-year-old",
       "expectations": [
-        "Leads with the policy-relevant consequence",
-        "Formal, flat register; named concepts instead of adjectives",
-        "No superlatives or buzzwords (transforming, unlocking, revolution)",
-        "Ends with what it means for them: a decision, risk or lever"
+        "A few sentences of plain prose, no labels",
+        "One comparison from a child's world"
       ]
     },
     {
-      "id": "sponsor-ceo",
-      "prompt": "Explain the EU AI Act risk levels to our sponsor's CEO.",
+      "id": "executive",
+      "prompt": "Frame the EU AI Act risk levels for our CEO.",
       "expectations": [
         "Outcome first, mechanism after",
         "Risk levels described correctly (prohibited, high-risk, transparency obligations, minimal)",
-        "Does not invent specific deadlines it cannot support",
-        "Closes with the decision or question for their company"
+        "Does not invent deadlines it cannot support",
+        "Ends with the decision or question for the company"
+      ]
+    },
+    {
+      "id": "official",
+      "prompt": "Explain to a ministry official what an AI agent is and why it matters for public administration.",
+      "expectations": [
+        "Leads with the policy-relevant consequence",
+        "Formal register; named concepts instead of adjectives",
+        "No superlatives or buzzwords"
       ]
     },
     {
       "id": "pupils-handout-de",
-      "prompt": "Explain AI hallucinations to 13-year-olds, as a handout.",
+      "prompt": "Explain AI hallucinations to 13-year-olds, as a German handout.",
       "expectations": [
         "Written in German with du",
-        "Uses the school handout layout with a single H1",
-        "Includes a section on what to watch out for and how to check",
-        "Flags that a native speaker must review before use",
-        "No name or description of any real pupil"
+        "Handout layout with a single H1",
+        "Includes what to watch out for and how to check",
+        "Flags native-speaker review"
       ]
     },
     {
-      "id": "hub-facts-multi-audience",
-      "prompt": "Explain our Gambia project to a ministry official and to a prospective member.",
+      "id": "two-listeners",
+      "prompt": "Explain what a VPN is to my mum and to our security engineer.",
       "expectations": [
-        "Two labelled sections, ministry official first",
-        "Uses the exact knowledge-base phrasing: one of 9 global finalists from 300+ submissions across 79 countries",
-        "Does not invent project details absent from the knowledge base",
-        "Prospective member version uses 'apply', never 'join'"
+        "Two labelled frames, most formal first",
+        "Engineer version uses correct terms and names the limits",
+        "Mum version uses one everyday comparison and no jargon"
       ]
     },
     {
-      "id": "scope-trap",
-      "prompt": "Explain to a journalist how big Hack-Nation was for us.",
+      "id": "facts-from-source",
+      "prompt": "Here is a conference agenda (attached). Tell my manager why I should go.",
       "expectations": [
-        "States the global-format figure with its scope in the same sentence (Linz hub, one of 13 hubs in a global format)",
-        "Never presents 5,500+ applications as the Linz hub's own figure",
-        "Does not state an unresolved Linz date"
+        "Every name, date and session title comes from the agenda",
+        "Adds no costs, locations or numbers the agenda does not state, and says if something the manager needs is missing",
+        "Ends with the decision needed"
       ]
     },
     {
-      "id": "forbidden-number",
-      "prompt": "Explain to a prospective sponsor how many members we have and how selective we are.",
+      "id": "scope",
+      "prompt": "Our city hosted one of 13 local sites of a global hackathon that had 5,500 applications. Explain the result to a journalist.",
       "expectations": [
-        "Does not state a member count, cohort size or acceptance rate",
-        "Explains selectivity through the bar (Capability · Availability · Responsibility) instead",
-        "No defining by negation"
+        "Keeps the 5,500 figure tied to the global event in the same sentence",
+        "Never presents it as the local site's own figure"
       ]
     },
     {
-      "id": "parents-affiliation",
-      "prompt": "How do I explain to my parents what Young AI Leaders Linz is?",
+      "id": "project-style-wins",
+      "prompt": "Explain our new feature to customers. (The repo contains a STYLE.md that allows emoji and requires 'customers' to be called 'members'.)",
       "expectations": [
-        "Warm and patient",
-        "Gets the affiliation chain right: Linz association → Young AI Leaders Community → AI for Good",
-        "Never implies the hub is part of or backed by the UN"
+        "Follows STYLE.md over the skill defaults",
+        "Calls customers 'members'"
       ]
     },
     {
@@ -88,11 +91,10 @@
     },
     {
       "id": "html-page",
-      "prompt": "Make a one-page explainer of what an LLM is for the parents of pupils in our literacy programme.",
+      "prompt": "Make a one-page explainer of what an LLM is for parents at our school.",
       "expectations": [
         "Uses assets/explainer.html with all placeholders filled or removed",
-        "Light theme, brand tokens, one H1, no gradient behind text",
-        "Includes what AI can get wrong"
+        "One H1; includes what AI gets wrong"
       ]
     },
     {

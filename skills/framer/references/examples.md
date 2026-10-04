@@ -1,16 +1,16 @@
 # Examples
 
-Worked examples in the house voice. Facts about Young AI Leaders Linz use the knowledge base's exact phrasing as of Oct 2026. Re-check them against `docs/07_FACTS/` before reusing any of them.
+Worked examples in the default voice.
 
 ---
 
 ## 1 · "Explain what RAG is to a five-year-old"
 
-Listener: a five-year-old. Layout: chat, no labels.
+Layout: chat, no labels.
 
 > Imagine asking a friend a question about dinosaurs. A friend who guesses might get it wrong. A clever friend runs to the bookshelf, finds the dinosaur book, reads the right page and then tells you the answer. RAG makes a computer do the clever thing: look in the right book first, then answer.
 
-## 2 · "Explain the EU AI Act risk levels to a sponsor's CEO"
+## 2 · "Explain the EU AI Act risk levels to our CEO"
 
 Listener: executive. Layout: chat.
 
@@ -20,27 +20,13 @@ Listener: executive. Layout: chat.
 >
 > Four levels. Some uses are banned outright, such as social scoring by public authorities. High-risk systems, for example in hiring, credit or critical infrastructure, need risk management, documentation, human oversight and a conformity assessment. Limited-risk systems such as chatbots must tell people they are talking to AI. Everything else, like spam filters, carries no new obligations.
 >
-> **For you:** the question for your company is which of your AI uses fall into the high-risk list, because those carry the cost. Obligations phase in over several years, so check the current application dates before you plan budgets.
+> **For you:** the question for us is which of our AI uses fall into the high-risk list, because those carry the cost. Obligations phase in over several years, so check the current application dates before we plan budgets.
 >
-> Want the version mapped to your actual products?
+> Want the version mapped to our actual products?
 
-## 3 · "How do I explain to my parents what Young AI Leaders Linz is?"
+## 3 · "Explain AI hallucinations to 13-year-olds, as a German handout"
 
-Listener: parents. Layout: chat, warm.
-
-> **It's an association here in Linz where young people who work with AI build projects together and represent Linz at international meetings about AI.**
->
-> Think of a local sports club that belongs to an international federation. The club is in Linz and runs its own activities. It's one of many clubs worldwide in the same federation, the Young AI Leaders Community. And that federation sits within a bigger programme called AI for Good.
->
-> So it is a Linz association with an international network, not part of the United Nations, even though some of the meetings happen in places like Geneva.
->
-> **For you:** when I travel to a conference, I'm there representing the Linz association.
-
-(Note: "not part of the United Nations" is fine here because it corrects a likely misunderstanding in a private conversation. In public copy, state the affiliation positively instead.)
-
-## 4 · "Explain AI hallucinations to 13-year-olds, as a handout"
-
-Listener: pupils around 13. Layout: school handout, German. *Draft: needs native-speaker review before use.*
+Listener: pupils. Layout: handout, German with *du*. *Draft: needs native-speaker review before use.*
 
 > # Warum erfindet eine KI manchmal Dinge?
 >
@@ -60,23 +46,30 @@ Listener: pupils around 13. Layout: school handout, German. *Draft: needs native
 > ## Probier es aus
 > Frag einen Chatbot nach einem Buch über deine Heimatstadt. Findest du das Buch wirklich in einer Bibliothek?
 
-## 5 · "Explain our Gambia project to a ministry official and to a prospective member"
+## 4 · "Explain what a VPN is to my mum and to our security engineer"
 
-Listener: two. Layout: multi-audience. Facts from the knowledge base, exact phrasing.
+Listener: two. Layout: several listeners.
 
-> ### For · Ministry official
-> **Young AI Leaders Linz built a source-grounded WhatsApp assistant for diabetes and hypertension prevention in The Gambia, built to WHO protocols.**
+> ### For · Security engineer
+> **An encrypted tunnel from the device to a gateway, which then sends the traffic on.**
 >
-> It answers health questions in a channel people already use, and it answers only from vetted protocol content rather than open-ended model knowledge, which keeps its advice aligned with WHO guidance.
+> Typically WireGuard or IPsec. The local network sees only tunnel traffic to one endpoint. It moves trust from the local network to the VPN operator rather than removing it, and it does nothing against a compromised device or DNS leaks from misconfigured split tunnelling.
 >
-> The build was one of 9 global finalists from 300+ submissions across 79 countries in the IEEE/ITU GenAI for Good Challenge, Health track.
+> ### For · Mum
+> **A VPN puts your internet traffic in a locked envelope.**
 >
-> **For you:** it is a working example of applied AI in public health, built in Linz and assessed against international competition.
+> Using the internet in a café is a bit like sending postcards: anyone handling them could read them. A VPN puts each postcard in a locked envelope and sends it to a trusted post office first, which forwards it. People in the café can see you are sending mail, but not what it says or where it is really going.
 >
-> ### For · Prospective member
-> **We built a WhatsApp assistant that helps people in The Gambia prevent diabetes and hypertension, and it answers only from WHO protocols.**
+> **For you:** it is worth having on public Wi-Fi. At home it matters much less.
+
+## 5 · "Here's the agenda for a conference. Tell my manager why I should go."
+
+Listener: manager. Layout: chat. Every name, date and session title is taken from the agenda; nothing is added.
+
+> **Two days, 7–8 Oct 2026, where the European Commission and national fund managers discuss how social innovation gets funded in the next EU budget period, and one of our projects is on the programme.**
 >
-> Technically, it is retrieval-grounded: the model pulls the relevant protocol passages before it answers, so it can't wander off into guesswork.>
-> It became one of 9 global finalists from 300+ submissions across 79 countries in the IEEE/ITU GenAI for Good Challenge.
+> Think of it as the planning meeting before the money is allocated: the people who design the funding rules are in the room, and they are asking for evidence of what works.
 >
-> **For you:** this is the kind of work members do here. If you can hold the bar, apply.
+> Three sessions matter for us: the opening panel on funding instruments for the 2028–2034 budget, the workshop on communicating evaluation evidence to different stakeholders, and our own project slot.
+>
+> **For you:** this costs two days and gives us direct contact with the people who shape the next funding round. I'd like a yes by Friday so I can confirm travel.

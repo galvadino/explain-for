@@ -1,61 +1,60 @@
 <!doctype html>
-<html lang="{{LANG: en | de}}">
+<html lang="{{LANG, e.g. en}}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{TOPIC}} · Explained for {{LISTENER}}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<title>{{TOPIC}} · For {{LISTENER}}</title>
 <style>
+  /* Design tokens: swap these for a project's brand if it has one. */
   :root {
-    --paper: #FAFBFC; --paper-2: #F1F4F8; --paper-3: #E7ECF2;
-    --ink: #0B1B2B; --ink-2: #16273B; --ink-soft: #5B6B7C;
-    --signal: #2E6BFF;
-    --hairline: rgba(11,27,43,0.10);
-    --gradient-brand: linear-gradient(95deg,#F5C24A 0%,#9BD957 30%,#2DD4A8 60%,#4DD0E1 100%);
-    --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+    --bg: #FAFBFC;
+    --surface: #F1F4F8;
+    --text: #0B1B2B;
+    --text-soft: #5B6B7C;
+    --accent: #2E6BFF;
+    --line: rgba(11,27,43,0.12);
+    --font-display: "Space Grotesk", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
     --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-    --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+    --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
     color-scheme: light;
   }
   * { box-sizing: border-box; }
   body {
-    margin: 0; background: var(--paper); color: var(--ink);
+    margin: 0; background: var(--bg); color: var(--text);
     font: 400 1rem/1.6 var(--font-body);
     padding: 3rem 1rem 4rem;
   }
   main { max-width: 42rem; margin: 0 auto; }
-  .tick {
+  .label {
     font: 500 0.75rem/1 var(--font-mono); letter-spacing: 0.08em;
-    text-transform: uppercase; color: var(--ink-soft);
+    text-transform: uppercase; color: var(--text-soft);
   }
-  .rule { height: 3px; width: 4rem; background: var(--gradient-brand); border-radius: 2px; margin: 1rem 0 1.5rem; }
-  h1, h2 { font-family: var(--font-display); font-weight: 700; line-height: 1.15; margin: 0; }
-  h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); }
-  h2 { font-size: 1.25rem; font-weight: 500; margin: 2.25rem 0 0.5rem; }
+  .rule { height: 3px; width: 4rem; background: var(--accent); border-radius: 2px; margin: 1rem 0 1.5rem; }
+  h1, h2 { font-family: var(--font-display); line-height: 1.15; margin: 0; }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+  h2 { font-size: 1.25rem; font-weight: 600; margin: 2.25rem 0 0.5rem; }
   p { margin: 0 0 1rem; max-width: 68ch; }
   .takeaway { font-size: 1.2rem; font-weight: 500; margin-top: 1.25rem; }
-  .bridge { background: var(--paper-2); border-left: 3px solid var(--ink-2); padding: 1rem 1.25rem; border-radius: 0 6px 6px 0; }
+  .bridge { background: var(--surface); border-left: 3px solid var(--text); padding: 1rem 1.25rem; border-radius: 0 6px 6px 0; }
   ol { padding-left: 1.25rem; margin: 0 0 1rem; }
   li { margin-bottom: 0.4rem; }
-  .stat { display: inline-block; border: 1px solid var(--hairline); border-radius: 8px; padding: 1rem 1.25rem; margin: 0.5rem 0 1rem; }
-  .stat .figure { font: 700 2rem/1 var(--font-display); color: var(--ink); }
-  .stat .label, .stat .scope { font-size: 0.875rem; color: var(--ink-soft); margin-top: 0.4rem; }
-  .breaks { color: var(--ink-soft); font-size: 0.95rem; }
-  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--ink-soft); }
-  a { color: var(--signal); }
+  .stat { display: inline-block; border: 1px solid var(--line); border-radius: 8px; padding: 1rem 1.25rem; margin: 0.5rem 0 1rem; }
+  .stat .figure { font: 700 2rem/1 var(--font-display); color: var(--text); }
+  .stat .caption, .stat .scope { font-size: 0.875rem; color: var(--text-soft); margin-top: 0.4rem; }
+  .breaks { color: var(--text-soft); font-size: 0.95rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: 0.85rem; color: var(--text-soft); }
+  a { color: var(--accent); }
   @media print { body { padding: 0; } .bridge { break-inside: avoid; } }
 </style>
 </head>
 <body>
 <main>
-  <div class="tick">Explained for · {{LISTENER}}</div>
+  <div class="label">For · {{LISTENER}}</div>
   <div class="rule" aria-hidden="true"></div>
-  <h1>{{HEADLINE: a sentence-case statement, not a slogan}}</h1>
+  <h1>{{HEADLINE: a sentence-case statement}}</h1>
   <p class="takeaway">{{TAKEAWAY: the one sentence to remember}}</p>
 
-  <h2>{{BRIDGE_HEADING, e.g. "Think of it like this" / "So kannst du es dir vorstellen"}}</h2>
+  <h2>{{BRIDGE_HEADING, e.g. "Think of it like this"}}</h2>
   <p class="bridge">{{BRIDGE: one comparison from the listener's world}}</p>
 
   <h2>{{DETAIL_HEADING, e.g. "How it works"}}</h2>
@@ -65,23 +64,23 @@
     <li>{{STEP}}</li>
   </ol>
 
-  <!-- Optional. Only for a figure taken from the knowledge base. Delete if unused. -->
+  <!-- Optional: one key figure from the source. Delete if unused. -->
   <div class="stat">
     <div class="figure">{{FIGURE}}</div>
-    <div class="label">{{LABEL}}</div>
-    <div class="scope">{{SCOPE: Linz / co-organised / community-wide / global format}}</div>
+    <div class="caption">{{WHAT_IT_COUNTS}}</div>
+    <div class="scope">{{SCOPE: whose, where, over what period}}</div>
   </div>
 
   <h2>{{FOR_YOU_HEADING, e.g. "What this means for you"}}</h2>
   <p>{{FOR_YOU}}</p>
 
-  <!-- Optional for adults; required for pupils ("Darauf solltest du achten"). -->
+  <!-- Optional for most listeners; required for learners on a technology topic. -->
   <h2>{{CHECK_HEADING, e.g. "What to watch out for"}}</h2>
-  <p>{{LIMITS: what it can get wrong and how to check it}}</p>
+  <p>{{LIMITS: what it gets wrong and how to check it}}</p>
 
   <p class="breaks">{{BREAKS: where the comparison breaks, one line; delete if not needed}}</p>
 
-  <footer>Young AI Leaders Linz · {{DATE, e.g. 4 Oct 2026}}</footer>
+  <footer>{{SOURCE_AND_DATE, e.g. "Based on: Conference agenda, 7–8 Oct 2026"}}</footer>
 </main>
 </body>
 </html>

@@ -1,8 +1,8 @@
 # Formats
 
-How an explanation is laid out, by where it will be used. Default to **Chat**. Switch only when the user names a use or a channel.
+How a frame is laid out, by where it will be used. Default to **Chat**. Switch only when the user names a use or a channel.
 
-All layouts follow the house style: sentence-case headings, no emoji, no exclamation marks, figures with their scope, `·` for tight labels.
+All layouts: sentence-case headings, figures with their scope, `·` for tight labels, the voice defaults in `voice.md`.
 
 ---
 
@@ -18,14 +18,14 @@ All layouts follow the house style: sentence-case headings, no emoji, no exclama
 **For you:** <what it means for this listener, one or two sentences.>
 
 <Optional: "Where the comparison breaks: …" one line.>
-<Optional: one follow-up offer, or for pupils one check question.>
+<Optional: one follow-up offer, or for a learner one check question.>
 ```
 
-For a five-year-old, drop the labels and keep it to a few sentences of plain prose.
+For a young child, drop the labels and keep it to a few sentences of plain prose.
 
-## Multi-audience
+## Several listeners
 
-One explanation per listener, each self-contained, in the order of the audience ladder (institutional first, family last).
+One frame per listener, each self-contained. Order them from most formal to least.
 
 ```
 ### For · <Listener>
@@ -36,67 +36,74 @@ One explanation per listener, each self-contained, in the order of the audience 
 …
 ```
 
-Then, if useful, one closing line on what stays true across all versions: the shared one-sentence core.
+If useful, close with one line naming the core that stays the same in every frame.
 
 ## Slide
 
 One idea per slide. If it needs a paragraph, it is two slides or speaker notes.
 
 ```
-Slide title (sentence case, a statement): <the takeaway, ≤ 10 words>
+Slide title (a statement, sentence case, ≤ 10 words): <the takeaway>
 On the slide: <one comparison or one figure with its scope; ≤ 3 short lines>
 Speaker notes: <the detail and the for-you, as you would say it aloud>
 ```
 
-Figures and their scope go on the same slide at the same weight. Named institutions do the work, not adjectives. No build animations.
+Keep a figure and its scope on the same slide at the same weight. No build animations.
 
-## School handout (AI literacy)
+## Handout
 
-German by default for Austrian schools (*du* for pupils), A4, one page. Flag native-speaker review under the output.
+One page, for learners or a general audience. Only one H1.
 
 ```
-# <Was ist …? / What is …?>  (the only H1)
+# <What is …?>
 
-**In einem Satz:** <takeaway>
+**In one sentence:** <takeaway>
 
-## So kannst du es dir vorstellen
-<one comparison from school or everyday life>
+## Think of it like this
+<one comparison>
 
-## Wie es funktioniert
+## How it works
 <3–5 short steps or sentences>
 
-## Darauf solltest du achten
-<what it can get wrong; how to check it>
+## What to watch out for
+<what it gets wrong; how to check it>
 
-## Probier es aus
+## Try it
 <one small task or question to check understanding>
 ```
 
-Capability, not enthusiasm: the section on what to watch out for is never optional.
+For a technology topic the "What to watch out for" section is never optional. In another language, translate the headings and flag native-speaker review.
 
-## LinkedIn post
-
-Composed, specific, written for institutional readers and partners first.
+## Email
 
 ```
-<Line 1: the specific thing — a named body, a number, a shipped build — not a hook question.>
+Subject: <the takeaway, ≤ 8 words, no clickbait>
+
+<Line 1: the takeaway, or what you need from them.>
+<1–2 short paragraphs: the comparison and the detail they need.>
+<Last line: the decision, the ask or the next step, with a date if there is one.>
+```
+
+## Social post
+
+```
+<Line 1: the specific thing — a named body, a number, a concrete result — not a hook question.>
 
 <2–4 short paragraphs: the comparison, the mechanism in plain words, why it matters.>
 
-<One closing line: what it means for the reader, or what we are doing next.>
+<One closing line: what it means for the reader, or what happens next.>
 ```
 
-No emoji, no hashtag walls (at most two or three relevant tags at the end), no "I'm thrilled to announce", no rhetorical opener. Any figure about us comes from the knowledge base with its scope.
+No hashtag walls (two or three relevant tags at most), no "thrilled to announce", no rhetorical opener.
 
 ## One-page explainer (HTML)
 
-When the user asks for a page, handout to share, or something visual, fill `assets/explainer.html`. It already carries the brand tokens and type. Rules it encodes:
+When the user asks for a page, a shareable handout or something visual, fill `assets/explainer.html`.
 
-- Paper background, ink text. Light only.
-- Space Grotesk for headings, Inter for body, JetBrains Mono only for small data ticks (dates, a figure's label).
-- The brand gradient only as a thin accent rule, never behind text and never behind a number.
+- The design tokens are grouped at the top of the file. Swap them for a project's brand if it has one; otherwise keep the neutral defaults.
 - One H1. Body measure around 65–75 characters.
-- Figures render in ink, with the scope label at the same size as the label.
-- No icons of robots, brains or circuit boards; no stock imagery.
+- Figures in the text colour, never on a coloured background, with the scope label at the same size as the label.
+- The accent colour is for one thin rule and links only.
+- No stock imagery and no AI clichés (glowing brains, robots, circuit boards).
 
 Replace every `{{…}}` placeholder; delete sections you do not use rather than leaving them empty.
