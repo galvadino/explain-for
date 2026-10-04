@@ -1,0 +1,66 @@
+{
+  "skill": "eli5",
+  "evals": [
+    {
+      "id": "default-age-5",
+      "prompt": "ELI5 what a database index is",
+      "expectations": [
+        "Treats the audience as a young child because none was named",
+        "Uses no technical jargon, or defines any term immediately",
+        "Uses one comparison from a child's world (books, toys, etc.)",
+        "Is a few sentences long"
+      ]
+    },
+    {
+      "id": "manager",
+      "prompt": "Explain to my manager why our nightly build keeps timing out (the test suite grew to 40 minutes and CI kills jobs at 30).",
+      "expectations": [
+        "Leads with impact rather than mechanism",
+        "Gives options with rough cost or time",
+        "Ends with a recommendation or a decision needed"
+      ]
+    },
+    {
+      "id": "engineer",
+      "prompt": "Explain how a Bloom filter works to a senior backend engineer.",
+      "expectations": [
+        "Uses correct terminology (hash functions, bit array, false positives)",
+        "Covers the trade-off: no false negatives, tunable false-positive rate, no deletion in the basic form",
+        "Does not over-explain basics"
+      ]
+    },
+    {
+      "id": "parent",
+      "prompt": "How do I explain two-factor authentication to my dad?",
+      "expectations": [
+        "Warm, respectful, no condescension",
+        "Comparison drawn from something he already uses (a key plus a PIN, bank card, etc.)",
+        "Says why it matters to him personally"
+      ]
+    },
+    {
+      "id": "two-audiences",
+      "prompt": "Explain what an LLM context window is to my 10-year-old and to a product manager.",
+      "expectations": [
+        "Produces two separate, labelled explanations",
+        "The child's version uses school or game comparisons and simple words",
+        "The PM's version frames it in terms of user impact and product limits"
+      ]
+    },
+    {
+      "id": "honesty",
+      "prompt": "ELI5 why the sky is blue",
+      "expectations": [
+        "Simplifies without stating anything false (e.g. does not claim the sky reflects the ocean)",
+        "Keeps it short and playful"
+      ]
+    },
+    {
+      "id": "no-trigger",
+      "prompt": "Refactor this function to use async/await.",
+      "expectations": [
+        "Skill should not trigger: no explanation or audience requested"
+      ]
+    }
+  ]
+}
