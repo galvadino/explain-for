@@ -1,4 +1,4 @@
-# ELI5 · Young AI Leaders Linz
+# Explain for · Young AI Leaders Linz
 
 A [Claude Code](https://claude.com/claude-code) skill that explains a topic, piece of code, policy or paper for one specific listener, in the house voice of Young AI Leaders Linz: from a five-year-old to a ministry official, from a 13-year-old in an AI literacy session to a sponsor's CEO.
 
@@ -16,7 +16,7 @@ A [Claude Code](https://claude.com/claude-code) skill that explains a topic, pie
 ## Structure
 
 ```
-skills/eli5/
+skills/explain-for/
 ├── SKILL.md                  the workflow
 ├── references/
 │   ├── audiences.md          listener profiles
@@ -32,7 +32,7 @@ evals/
 ## Example prompts
 
 ```
-ELI5 what RAG is
+Explain what RAG is to a five-year-old
 Explain the EU AI Act risk levels to our sponsor's CEO
 Explain AI hallucinations to 13-year-olds, as a handout
 Explain our Gambia project to a ministry official and to a prospective member
@@ -46,11 +46,11 @@ How do I explain to my parents what Young AI Leaders Linz is?
 Personal (all projects):
 
 ```bash
-git clone https://github.com/galvadino/eli5.git
-cp -r eli5/skills/eli5 ~/.claude/skills/eli5
+git clone https://github.com/galvadino/explain-for.git
+cp -r explain-for/skills/explain-for ~/.claude/skills/explain-for
 ```
 
-Project only, e.g. inside the knowledge-base repo: copy `skills/eli5` to `.claude/skills/eli5`. Run from that repo, the skill reads `docs/` directly for facts about the hub.
+Project only, e.g. inside the knowledge-base repo: copy `skills/explain-for` to `.claude/skills/explain-for`. Run from that repo, the skill reads `docs/` directly for facts about the hub.
 
 ## Facts live in the knowledge base, not here
 
@@ -59,10 +59,6 @@ The skill carries no figures of its own beyond the dated examples. Facts about t
 ## Evals
 
 `evals/evals.json` holds test prompts with expectations. Run each with the skill installed and check the output against them.
-
-## Credits
-
-Started from the idea in [DreambigOu/ELI5](https://github.com/dreambigou/eli5) (MIT) and rebuilt for Young AI Leaders Linz.
 
 ## License
 

@@ -1,13 +1,13 @@
 {
-  "skill": "eli5",
+  "skill": "explain-for",
   "evals": [
     {
-      "id": "default-age-5",
-      "prompt": "ELI5 what RAG is",
+      "id": "no-listener-named",
+      "prompt": "Explain simply what RAG is",
       "expectations": [
-        "Treats the listener as a five-year-old because none was named",
-        "No jargon; one comparison held throughout",
-        "A few sentences; no emoji, no exclamation marks"
+        "Treats the listener as a curious non-specialist adult because none was named",
+        "No jargon; one comparison from everyday life, held throughout",
+        "One or two short paragraphs; no emoji, no exclamation marks"
       ]
     },
     {

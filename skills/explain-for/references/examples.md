@@ -4,9 +4,9 @@ Worked examples in the house voice. Facts about Young AI Leaders Linz use the kn
 
 ---
 
-## 1 · "ELI5 what RAG is"
+## 1 · "Explain what RAG is to a five-year-old"
 
-Listener: a five-year-old (default). Layout: chat, no labels.
+Listener: a five-year-old. Layout: chat, no labels.
 
 > Imagine asking a friend a question about dinosaurs. A friend who guesses might get it wrong. A clever friend runs to the bookshelf, finds the dinosaur book, reads the right page and then tells you the answer. RAG makes a computer do the clever thing: look in the right book first, then answer.
 

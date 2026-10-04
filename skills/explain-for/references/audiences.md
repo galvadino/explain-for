@@ -82,7 +82,7 @@ Never speak for the global community or another hub.
 
 | Listener | Words | Comparisons from | Feel |
 |---|---|---|---|
-| **~5** (ELI5 default) | Short, everyday words; short sentences | Toys, snacks, pets, the playground, bedtime | Wonder, from the picture rather than punctuation |
+| **~5** | Short, everyday words; short sentences | Toys, snacks, pets, the playground, bedtime | Wonder, from the picture rather than punctuation |
 | **~10** | Simple; one or two new words explained | School, sport, video games, building blocks | Curious, cause and effect |
 | **~15** | Normal teen vocabulary, some abstraction | Phones, group chats, streaming, games | Relaxed, never trying too hard to sound young |
 | **20s–30s** | Plain adult language | Rent, commuting, studying, first jobs | Direct |

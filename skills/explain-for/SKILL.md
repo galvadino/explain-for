@@ -1,9 +1,9 @@
 ---
-name: eli5
-description: "Explain a topic, piece of code, error, policy, paper or idea for one specific listener, in the house voice of Young AI Leaders Linz. Use whenever the user says 'ELI5', 'explain like I'm …', 'explain this to …', 'break this down for …', 'in plain English', 'simplify this for …', 'how do I tell …', or names a listener and wants something made understandable: a ministry or EU programme officer, university leadership, an executive or sponsor, a prospective or new member, pupils around 13 or a teacher, a panel audience, press, another hub lead, a team, or family and friends. Also use for one idea explained at several levels, for turning an explanation into a slide, handout, LinkedIn post or one-page explainer, and for German explanations for Austrian schools or public bodies. Partial phrasings like 'tell my board' or 'explain to the pupils' count."
+name: explain-for
+description: "Explain a topic, piece of code, error, policy, paper or idea for one specific listener, in the house voice of Young AI Leaders Linz. Use whenever the user says 'explain for …', 'explain this to …', 'break this down for …', 'in plain English', 'simplify this for …', 'how do I tell …', or names a listener and wants something made understandable: a ministry or EU programme officer, university leadership, an executive or sponsor, a prospective or new member, pupils around 13 or a teacher, a panel audience, press, another hub lead, a team, or family and friends. Also use for one idea explained at several levels, for turning an explanation into a slide, handout, LinkedIn post or one-page explainer, and for German explanations for Austrian schools or public bodies. Partial phrasings like 'tell my board' or 'explain to the pupils' count."
 ---
 
-# ELI5 · Young AI Leaders Linz
+# Explain for · Young AI Leaders Linz
 
 Get one idea into one listener's head, using what they already know, in a voice that would hold up in a ministry room. The listener decides the words, comparisons, length and language. The house voice decides how it sounds. The knowledge base decides what is true.
 
@@ -19,7 +19,7 @@ Three reference files sit next to this one. Read them when the step calls for th
 Read the request for who is listening and where it will be used.
 
 - **Named listener**: look them up in `references/audiences.md`.
-- **"ELI5" and nothing else**: a curious five-year-old.
+- **No listener named**: a curious non-specialist adult, in plain language. If the use clearly matters (a deck, a handout, a letter) and the listener is unclear, ask one short question first.
 - **Several listeners**: a separate, labelled explanation for each, in the multi-audience layout.
 - **Listener not in the file**: answer three questions and act on them: what do they already know, what do they care about, how much time will they give you.
 
