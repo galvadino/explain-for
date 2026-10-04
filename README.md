@@ -1,6 +1,14 @@
-# Explain for · Young AI Leaders Linz
+# Framer
 
-A [Claude Code](https://claude.com/claude-code) skill that explains a topic, piece of code, policy or paper for one specific listener, in the house voice of Young AI Leaders Linz: from a five-year-old to a ministry official, from a 13-year-old in an AI literacy session to a sponsor's CEO.
+**Same facts. The right frame.**
+
+A [Claude Code](https://claude.com/claude-code) skill from Young AI Leaders Linz that frames one idea for one listener: a 13-year-old in an AI literacy session, a sponsor's CEO, a ministry official, the dinner table.
+
+The frame is every choice that decides whether an idea lands: what comes first, which comparison carries it, how deep it goes, what it means for the listener, and the language and layout it arrives in. Framer makes those choices per listener. The facts come from the knowledge base and the voice from the house style, so both hold steady in every room.
+
+```
+/framer the EU AI Act risk levels for our sponsor's CEO
+```
 
 ## What it does
 
@@ -16,7 +24,7 @@ A [Claude Code](https://claude.com/claude-code) skill that explains a topic, pie
 ## Structure
 
 ```
-skills/explain-for/
+skills/framer/
 ├── SKILL.md                  the workflow
 ├── references/
 │   ├── audiences.md          listener profiles
@@ -32,7 +40,7 @@ evals/
 ## Example prompts
 
 ```
-Explain what RAG is to a five-year-old
+Frame what RAG is for a five-year-old
 Explain the EU AI Act risk levels to our sponsor's CEO
 Explain AI hallucinations to 13-year-olds, as a handout
 Explain our Gambia project to a ministry official and to a prospective member
@@ -46,11 +54,11 @@ How do I explain to my parents what Young AI Leaders Linz is?
 Personal (all projects):
 
 ```bash
-git clone https://github.com/galvadino/explain-for.git
-cp -r explain-for/skills/explain-for ~/.claude/skills/explain-for
+git clone https://github.com/galvadino/framer.git
+cp -r framer/skills/framer ~/.claude/skills/framer
 ```
 
-Project only, e.g. inside the knowledge-base repo: copy `skills/explain-for` to `.claude/skills/explain-for`. Run from that repo, the skill reads `docs/` directly for facts about the hub.
+Project only, e.g. inside the knowledge-base repo: copy `skills/framer` to `.claude/skills/framer`. Run from that repo, the skill reads `docs/` directly for facts about the hub.
 
 ## Facts live in the knowledge base, not here
 

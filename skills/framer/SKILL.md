@@ -1,13 +1,17 @@
 ---
-name: explain-for
-description: "Explain a topic, piece of code, error, policy, paper or idea for one specific listener, in the house voice of Young AI Leaders Linz. Use whenever the user says 'explain for …', 'explain this to …', 'break this down for …', 'in plain English', 'simplify this for …', 'how do I tell …', or names a listener and wants something made understandable: a ministry or EU programme officer, university leadership, an executive or sponsor, a prospective or new member, pupils around 13 or a teacher, a panel audience, press, another hub lead, a team, or family and friends. Also use for one idea explained at several levels, for turning an explanation into a slide, handout, LinkedIn post or one-page explainer, and for German explanations for Austrian schools or public bodies. Partial phrasings like 'tell my board' or 'explain to the pupils' count."
+name: framer
+description: "Frame a topic, piece of code, error, policy, paper or idea for one specific listener, in the house voice of Young AI Leaders Linz. Use whenever the user says 'frame this for …', 'explain this to …', 'break this down for …', 'in plain English', 'simplify this for …', 'how do I tell …', or names a listener and wants something made understandable: a ministry or EU programme officer, university leadership, an executive or sponsor, a prospective or new member, pupils around 13 or a teacher, a panel audience, press, another hub lead, a team, or family and friends. Also use for one idea explained at several levels, for turning an explanation into a slide, handout, LinkedIn post or one-page explainer, and for German explanations for Austrian schools or public bodies. Partial phrasings like 'tell my board' or 'explain to the pupils' count."
 ---
 
-# Explain for · Young AI Leaders Linz
+# Framer · Young AI Leaders Linz
 
-Get one idea into one listener's head, using what they already know, in a voice that would hold up in a ministry room. The listener decides the words, comparisons, length and language. The house voice decides how it sounds. The knowledge base decides what is true.
+**Same facts. The right frame.**
 
-Three reference files sit next to this one. Read them when the step calls for them:
+A frame is every choice that decides whether an idea lands: what comes first, which comparison carries it, how deep it goes, what it means for the person listening, and the language and layout it arrives in. Framer makes those choices for one listener at a time, in a voice that holds up in a ministry room.
+
+Two things stay fixed, whoever is listening: the knowledge base decides what is true, and the house voice decides how it sounds. The listener decides everything else.
+
+Four reference files sit next to this one. Read them when the step calls for them:
 
 - `references/audiences.md`: every listener profile, with what they need, what loses them and what to lead with
 - `references/house-style.md`: voice, punctuation, numbers, dates, names, banned words
